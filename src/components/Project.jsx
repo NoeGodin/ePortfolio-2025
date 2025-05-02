@@ -1,0 +1,159 @@
+import React from "react";
+import {
+  Box,
+  Typography,
+  Paper,
+  Stack,
+  Chip,
+  IconButton,
+  Grid,
+} from "@mui/material";
+import { styled } from "@mui/material/styles";
+import LaunchIcon from "@mui/icons-material/Launch";
+import Button from "@mui/material/Button";
+import { PiGitlabLogoLight } from "react-icons/pi";
+
+const ProjectCard = styled(Paper)(({ theme }) => ({
+  backgroundColor: "rgba(32, 32, 32, 0.7)",
+  borderRadius: 12,
+  padding: theme.spacing(3),
+  height: "100%",
+  display: "flex",
+  flexDirection: "column",
+  transition: "all 0.3s ease",
+  "&:hover": {
+    transform: "translateY(-5px)",
+    boxShadow: "0 10px 20px rgba(0,0,0,0.2)",
+  },
+}));
+
+const ProjectImage = styled(Box)(({ theme }) => ({
+  width: "100%",
+  height: 200,
+  borderRadius: 8,
+  marginBottom: theme.spacing(2),
+  overflow: "hidden",
+  position: "relative",
+  backgroundColor: "rgba(0, 0, 0, 0.2)", // Fallback color
+}));
+
+const IconContainer = styled(Box)(() => ({
+  position: "absolute",
+  top: 10,
+  left: 10,
+  width: 40,
+  height: 40,
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  backgroundColor: "rgba(0, 0, 0, 0.6)",
+  borderRadius: 8,
+  color: "#ffffff",
+}));
+
+const Project = ({ project }) => {
+  if (!project) return null;
+
+  return (
+    <Grid item size={{ xs: 12, sm: 12, md: 6, lg: 6 }} key={project.name}>
+      <ProjectCard elevation={0}>
+        <ProjectImage
+          sx={{
+            backgroundImage: project.image ? `url(${project.image})` : "none",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center center",
+            backgroundSize: "cover",
+          }}
+        >
+          {project.icon && <IconContainer>{project.icon}</IconContainer>}
+        </ProjectImage>
+
+        <Typography variant="h5" component="h3" fontWeight={600} sx={{ mb: 1 }}>
+          {project.title}
+        </Typography>
+
+        <Typography
+          variant="body2"
+          sx={{ color: "#aaaaaa", mb: 2, flexGrow: 1 }}
+        >
+          {project.description}
+        </Typography>
+
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            mb: 3,
+            flexWrap: "wrap",
+          }}
+        >
+          <Stack
+            direction="row"
+            spacing={1}
+            sx={{ flexWrap: "wrap", gap: 1, mb: { xs: 2, md: 0 } }}
+          >
+            {project.technologies &&
+              project.technologies.map((tech) => (
+                <Chip
+                  key={tech}
+                  label={tech}
+                  size="small"
+                  sx={{
+                    backgroundColor: "rgba(91, 122, 252, 0.1)",
+                    color: "#aaaaaa",
+                    borderRadius: 1,
+                  }}
+                />
+              ))}
+          </Stack>
+
+          {project.link && (
+            <Button
+              variant="outlined"
+              size="small"
+              endIcon={<LaunchIcon fontSize="small" />}
+              onClick={() => window.open(project.link, "_blank")}
+              sx={{
+                borderColor: "rgba(91, 122, 252, 0.5)",
+                color: "#5b7afc",
+                borderRadius: 1,
+                textTransform: "none",
+                px: 2,
+                "&:hover": {
+                  borderColor: "#5b7afc",
+                  backgroundColor: "rgba(91, 122, 252, 0.1)",
+                },
+              }}
+            >
+              View Project
+            </Button>
+          )}
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            mt: "auto",
+          }}
+        >
+          <Stack direction="row" spacing={1} sx={{ ml: "auto" }}>
+            {project.gitlab && (
+              <IconButton
+                size="small"
+                sx={{ color: "#aaaaaa", "&:hover": { color: "#ffffff" } }}
+                onClick={() => window.open(project.gitlab, "_blank")}
+              >
+                <PiGitlabLogoLight />
+              </IconButton>
+            )}
+          </Stack>
+        </Box>
+      </ProjectCard>
+    </Grid>
+  );
+};
+
+export default Project;
