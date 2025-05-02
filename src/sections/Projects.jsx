@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Project from "../components/Project";
-import projects from "../data/projects"; // Import projects data
+import projects from "../data/projects";
 
 const TabsContainer = styled(Paper)(({ theme }) => ({
   display: "flex",
