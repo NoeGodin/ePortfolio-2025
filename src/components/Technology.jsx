@@ -5,7 +5,7 @@ import { styled } from "@mui/material/styles";
 const TechCard = styled(Paper)(({ theme }) => ({
   backgroundColor: "rgba(32, 32, 32, 0.7)",
   borderRadius: 12,
-  padding: theme.spacing(3),
+  padding: theme.spacing(2),
   height: "100%",
   display: "flex",
   flexDirection: "column",
@@ -36,18 +36,19 @@ const Technology = ({ tech }) => {
       <TechCard>
         <Grid container spacing={2} alignItems={"center"}>
           <IconContainer bgcolor={tech.color}>{tech.icon}</IconContainer>
-          <Typography variant="h6" component="h3" fontWeight={600}>
-            {tech.name}
-          </Typography>
+          <Box>
+            <Typography variant="h6" component="h3" fontWeight={600}>
+              {tech.name}
+            </Typography>
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              sx={{ color: "#aaaaaa" }}
+            >
+              {tech.description}
+            </Typography>
+          </Box>
         </Grid>
-
-        <Typography
-          variant="body2"
-          color="textSecondary"
-          sx={{ color: "#aaaaaa" }}
-        >
-          {tech.description}
-        </Typography>
       </TechCard>
     </Grid>
   );
