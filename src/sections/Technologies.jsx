@@ -2,7 +2,7 @@ import { Box, Typography, Grid, Container } from "@mui/material";
 import technologies from "../data/technologies.jsx";
 import Technology from "../components/Technology.jsx";
 
-const TechnologiesSection = () => {
+const Technologies = () => {
   return (
     <Container maxWidth="lg" sx={{ py: 8 }}>
       <Box sx={{ mb: 6, textAlign: "left" }}>
@@ -36,4 +36,4 @@ const TechnologiesSection = () => {
   );
 };
 
-export default TechnologiesSection;
+export default Technologies;

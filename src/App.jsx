@@ -2,10 +2,11 @@ import * as React from "react";
 import { ThemeProvider, CssBaseline, Box } from "@mui/material";
 import darkTheme from "./theme-config";
 import Navbar from "./components/Navbar";
-import HeroSection from "./sections/Hero";
-import TechnologiesSection from "./sections/Technologies";
+import Hero from "./sections/Hero";
+import Technologies from "./sections/Technologies";
 import Footer from "./sections/Footer.jsx";
 import Projects from "./sections/Projects.jsx";
+import Experience from "./sections/Experience.jsx";
 
 function App() {
   return (
@@ -23,10 +24,10 @@ function App() {
       >
         <Navbar />
         <section id="home">
-          <HeroSection />
+          <Hero />
         </section>
         <section id="technologies">
-          <TechnologiesSection />
+          <Technologies />
         </section>
         <section id="projects">
           <Projects />

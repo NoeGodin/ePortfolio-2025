@@ -1,4 +1,11 @@
-import { Box, Typography, Button, Container, Stack } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Button,
+  Container,
+  Stack,
+  Avatar,
+} from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
 import EmailIcon from "@mui/icons-material/Email";
 import { styled } from "@mui/material/styles";
@@ -27,6 +34,19 @@ const ActionButton = styled(Button)(({ theme, variant }) => ({
       }),
 }));
 
+const StyledAvatar = styled(Avatar)(({ theme }) => ({
+  width: 150,
+  height: 150,
+  border: "4px solid rgba(91, 122, 252, 0.3)",
+  boxShadow: "0 8px 24px rgba(0, 0, 0, 0.2)",
+  marginBottom: theme.spacing(4),
+  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+  "&:hover": {
+    transform: "scale(1.05)",
+    boxShadow: "0 12px 28px rgba(0, 0, 0, 0.3)",
+  },
+}));
+
 const handleContact = () => {
   window.location.href = "mailto:noegodin2@gmail.com";
 };
@@ -42,7 +62,7 @@ const handleDownloadCV = () => {
   document.body.removeChild(link);
 };
 
-const HeroSection = () => {
+const Hero = () => {
   return (
     <Container maxWidth="lg">
       <Box
@@ -69,6 +89,8 @@ const HeroSection = () => {
           Full-Stack <BlueText>Developer & Software</BlueText> Engineer
         </Typography>
 
+        <StyledAvatar alt="Noé Godin" src="/profile-photo.jpg" />
+
         <Typography
           variant="body1"
           sx={{
@@ -77,8 +99,7 @@ const HeroSection = () => {
             color: "#aaaaaa",
           }}
         >
-          Hi. I'm Noé Godin, I create intuitive and highly functional
-          applications.
+          Hi. I'm Noé Godin
         </Typography>
         <Typography
           variant="subtitle1"
@@ -114,4 +135,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;
