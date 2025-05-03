@@ -9,6 +9,7 @@ const projects = {
     {
       id: 1,
       title: "Portfolio Website",
+      date: "2025",
       description:
         "My personal portfolio website built with React and Material UI to showcase my projects and skills.",
       image: "/projects/200x300.jpg",
@@ -20,6 +21,7 @@ const projects = {
     {
       id: 2,
       title: "Weather Application",
+      date: "2024",
       description:
         "A real-time weather application that provides detailed forecasts and weather information.",
       image: "/projects/300x300.jpg",
@@ -30,6 +32,7 @@ const projects = {
     {
       id: 3,
       title: "Task Manager",
+      date: "2024",
       description:
         "A productivity tool for managing daily tasks with categories and priority settings.",
       image: "/projects/832x624.jpg",
@@ -41,6 +44,7 @@ const projects = {
     {
       id: 4,
       title: "Music Player",
+      date: "2023",
       description:
         "A custom music player with playlist functionality and audio visualization features.",
       image: "/projects/960x640.jpg",
@@ -51,6 +55,7 @@ const projects = {
     {
       id: 5,
       title: "Recipe Finder",
+      date: "2023",
       description:
         "An application to search for recipes based on available ingredients and dietary preferences.",
       image: "/projects/1024x640.jpg",
@@ -63,6 +68,7 @@ const projects = {
     {
       id: 6,
       title: "University Course Platform",
+      date: "2024",
       description:
         "A collaborative platform developed for my university to manage course materials and assignments.",
       image: "/projects/1280x720.jpg",
@@ -73,6 +79,7 @@ const projects = {
     {
       id: 7,
       title: "Research Visualization Tool",
+      date: "2024",
       description:
         "Data visualization tool created for a research project on renewable energy consumption.",
       image: "/projects/1920x1080.jpg",
@@ -84,6 +91,7 @@ const projects = {
     {
       id: 8,
       title: "Algorithm Visualizer",
+      date: "2023",
       description:
         "Educational tool that visualizes sorting algorithms for computer science studies.",
       image: "/projects/200x300.jpg",
@@ -95,6 +103,7 @@ const projects = {
     {
       id: 9,
       title: "Scientific Calculator",
+      date: "2022",
       description:
         "Advanced calculator application with scientific functions and formula history.",
       image: "/projects/300x300.jpg",
@@ -107,6 +116,7 @@ const projects = {
     {
       id: 10,
       title: "E-commerce Platform",
+      date: "2025",
       description:
         "A full-featured e-commerce solution built for a client with product management and payment processing.",
       image: "/projects/832x624.jpg",
@@ -117,6 +127,7 @@ const projects = {
     {
       id: 11,
       title: "Healthcare Dashboard",
+      date: "2024",
       description:
         "Administrative dashboard for healthcare providers to manage patient data and appointments.",
       image: "/projects/960x640.jpg",
@@ -127,6 +138,7 @@ const projects = {
     {
       id: 12,
       title: "Marketing Analytics Tool",
+      date: "2023",
       description:
         "Data analytics platform for marketing teams to track campaign performance and ROI.",
       image: "/projects/1024x640.jpg",
@@ -138,6 +150,7 @@ const projects = {
     {
       id: 13,
       title: "CRM System",
+      date: "2022",
       description:
         "Customer relationship management system with lead tracking and sales pipeline features.",
       image: "/projects/1280x720.jpg",

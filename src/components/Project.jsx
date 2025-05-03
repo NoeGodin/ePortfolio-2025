@@ -51,6 +51,15 @@ const IconContainer = styled(Box)(() => ({
   color: "#ffffff",
 }));
 
+const DateChip = styled(Chip)(() => ({
+  backgroundColor: "rgba(91, 122, 252, 0.1)",
+  color: "#5b7afc",
+  borderRadius: 4,
+  fontSize: "0.75rem",
+  fontWeight: 500,
+  height: 24,
+}));
+
 const Project = ({ project }) => {
   if (!project) return null;
 
@@ -68,9 +77,20 @@ const Project = ({ project }) => {
           {project.icon && <IconContainer>{project.icon}</IconContainer>}
         </ProjectImage>
 
-        <Typography variant="h5" component="h3" fontWeight={600} sx={{ mb: 1 }}>
-          {project.title}
-        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "flex-start",
+            mb: 1,
+          }}
+        >
+          <Typography variant="h5" component="h3" fontWeight={600}>
+            {project.title}
+          </Typography>
+
+          {project.date && <DateChip label={project.date} size="small" />}
+        </Box>
 
         <Typography
           variant="body2"
