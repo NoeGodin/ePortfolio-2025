@@ -146,7 +146,7 @@ const Project = ({ project }) => {
                 },
               }}
             >
-              View Project
+              See More
             </Button>
           )}
         </Box>

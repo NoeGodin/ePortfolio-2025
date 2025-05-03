@@ -1,53 +1,60 @@
 export const academicData = [
   {
-    title: "Master en Développement Web",
-    organization: "Université de Lyon",
-    date: "2020 - 2022",
+    title: "Engineer Degree in Computer Science",
+    organization: "University of Technology of Compiègne (UTC)",
+    date: "2024 - 2027",
     description:
-      "Spécialisation en développement frontend avec React et backend avec Node.js. Projet de fin d'études sur la création d'applications web progressives.",
-    skills: ["React", "Node.js", "JavaScript", "UX/UI Design"],
+      "Currently a first-year student in the Computer Engineering branch, doing an apprenticeship at AXA Group Operations",
+    skills: [
+      "Advanced Object-Oriented Development",
+      "Statistics",
+      "Propositional Logic",
+    ],
   },
   {
-    title: "Licence en Informatique",
-    organization: "Université de Paris",
-    date: "2017 - 2020",
+    title: "Bachelor in Computer Science",
+    organization: "University Institute of Technology of Paris",
+    date: "2021 - 2024",
     description:
-      "Formation généraliste en informatique avec une introduction aux fondamentaux du développement logiciel, bases de données et réseaux.",
-    skills: ["Java", "SQL", "Algorithmes", "Architecture logicielle"],
+      "Completed the 3rd year and obtained the BUT Diploma in Informatics with highest honors",
+    skills: [
+      "Computer Architecture",
+      "Machine Learning Algorithms",
+      "Basics of Programming",
+    ],
   },
   {
-    title: "Baccalauréat Scientifique",
-    organization: "Lycée Jean Moulin",
-    date: "2014 - 2017",
-    description:
-      "Baccalauréat scientifique option Mathématiques avec mention Bien. Participation à des concours de programmation.",
-    skills: ["Mathématiques", "Physique", "Python"],
+    title: "Scientific Baccalaureate",
+    organization: "Middle & High School, Sévigné",
+    date: "2014 - 2021",
+    description: "Baccalaureate with high honors.",
+    skills: ["Mathematics", "Physics", "Biology"],
   },
 ];
 
 export const professionalData = [
   {
-    title: "Développeur Frontend Senior",
-    organization: "TechSolutions",
-    date: "2022 - Présent",
+    title: "Solution / Technical Architect - Apprentice",
+    organization: "AXA Group Operations",
+    date: "2024 - 2027",
     description:
-      "Développement d'applications web complexes pour des clients internationaux. Encadrement d'une équipe de développeurs junior et mise en place de bonnes pratiques.",
-    skills: ["React", "TypeScript", "Material UI", "Git", "CI/CD"],
+      "Gained expertise in architectural fundamentals, especially in Cloud and created Archimate diagrams to model an application's Business, Application, and Technology layers",
+    skills: ["Azure", "Archimate", "Spring Boot"],
   },
   {
-    title: "Développeur Full Stack",
-    organization: "WebStudio",
-    date: "2020 - 2022",
+    title: "Full-stack Developer - Intern",
+    organization: "Redpill",
+    date: "2024, 6 months",
     description:
-      "Conception et développement d'applications web pour différents secteurs d'activité. Travail en méthodologie Agile avec des sprints de deux semaines.",
-    skills: ["React", "Node.js", "MongoDB", "Express", "Docker"],
+      "Developed and optimized features, fixed bugs, and redesigned multiple pages of their main website using React and MongoDB.",
+    skills: ["React", "MongoDB", "Jenkins"],
   },
   {
-    title: "Stage Développeur Frontend",
-    organization: "DigitalAgency",
-    date: "2019 - 2020",
+    title: "Java Developer - Intern",
+    organization: "Planète Immobilière",
+    date: "2023, 2 months",
     description:
-      "Stage de fin d'études axé sur le développement d'interfaces utilisateur modernes et réactives. Contribution à la refonte complète d'un site e-commerce.",
-    skills: ["JavaScript", "HTML/CSS", "Vue.js", "Responsive Design"],
+      "Built an application to ensure correct interoperability by analyzing physical addresses and converting them into coordinates with a confidence interval (based on misspelling of the address)",
+    skills: ["Java", "PostgreSQL"],
   },
 ];
