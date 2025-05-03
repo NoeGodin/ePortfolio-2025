@@ -11,17 +11,20 @@ stages:
 build:
   stage: build
   script:
-    - npm ci
+    - npm install
     - npm run build
   artifacts:
     paths:
-      - build/
+      - dist/
 
 pages:
   stage: deploy
+  needs:
+    - build
   script:
-    - rm -rf public
-    - mv build public
+    - mkdir -p public
+    - rm -rf public/*
+    - cp -r dist/* public/
   artifacts:
     paths:
       - public
