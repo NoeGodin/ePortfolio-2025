@@ -23,9 +23,7 @@ const TechnologiesSection = () => {
             maxWidth: "700px",
           }}
         >
-          I'm proficient in a range of modern technologies that empower me to
-          build highly functional solutions. These are some of my main
-          technologies.
+          These are some of my main technologies.
         </Typography>
       </Box>
 

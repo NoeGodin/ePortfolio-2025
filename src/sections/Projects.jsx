@@ -68,10 +68,10 @@ const Projects = () => {
               Personal
             </TabButton>
             <TabButton
-              active={activeTab === "education" ? 1 : 0}
-              onClick={() => handleTabChange("education")}
+              active={activeTab === "academic" ? 1 : 0}
+              onClick={() => handleTabChange("academic")}
             >
-              Education
+              Academic
             </TabButton>
             <TabButton
               active={activeTab === "professional" ? 1 : 0}

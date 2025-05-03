@@ -59,7 +59,7 @@ const projects = {
       link: "https://recipes.noegodin.com",
     },
   ],
-  education: [
+  academic: [
     {
       id: 6,
       title: "University Course Platform",
