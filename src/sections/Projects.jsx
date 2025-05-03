@@ -5,48 +5,12 @@ import {
   Grid,
   Container,
   Stack,
-  Button,
-  Paper,
   Pagination,
 } from "@mui/material";
-import { styled } from "@mui/material/styles";
 import Project from "../components/Project";
 import projects from "../data/projects";
-
-const TabsContainer = styled(Paper)(({ theme }) => ({
-  display: "flex",
-  justifyContent: "center",
-  backgroundColor: "rgba(32, 32, 32, 0.7)",
-  borderRadius: 12,
-  padding: theme.spacing(1.5),
-  marginBottom: theme.spacing(5),
-  width: "fit-content",
-  margin: "0 auto",
-}));
-
-const TabButton = styled(Button)(({ theme, active }) => ({
-  borderRadius: 8,
-  textTransform: "none",
-  padding: "10px 20px",
-  fontWeight: 500,
-  minWidth: 120,
-  transition: "all 0.2s ease",
-  ...(active
-    ? {
-        backgroundColor: "rgba(255, 255, 255, 0.1)",
-        color: theme.palette.common.white,
-        border: "1px solid rgba(255, 255, 255, 0.3)",
-      }
-    : {
-        backgroundColor: "transparent",
-        color: "#aaaaaa",
-        border: "1px solid rgba(170, 170, 170, 0.2)",
-        "&:hover": {
-          backgroundColor: "rgba(255, 255, 255, 0.05)",
-          borderColor: "rgba(255, 255, 255, 0.1)",
-        },
-      }),
-}));
+import TabsContainer from "../components/TabsContainer";
+import TabButton from "../components/TabButton";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("personal");
