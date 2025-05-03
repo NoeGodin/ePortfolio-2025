@@ -29,6 +29,9 @@ function App() {
         <section id="technologies">
           <Technologies />
         </section>
+        <section id="experience">
+          <Experience />
+        </section>
         <section id="projects">
           <Projects />
         </section>

@@ -30,7 +30,13 @@ const NavButton = styled(Button)(({ theme }) => ({
 }));
 
 export default function Navbar() {
-  const navItems = ["Home", "Technologies", "Projects", "Contact"];
+  const navItems = [
+    "Home",
+    "Technologies",
+    "Experience",
+    "Projects",
+    "Contact",
+  ];
 
   return (
     <React.Fragment>
