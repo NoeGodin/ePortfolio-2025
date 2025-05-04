@@ -52,11 +52,11 @@ const handleContact = () => {
 };
 
 const handleDownloadCV = () => {
-  const cvPath = "public/hi.txt";
+  const cvPath = "public/CV-NoeGodin.pdf";
 
   const link = document.createElement("a");
   link.href = cvPath;
-  link.download = "CV_Noe_Godin.txt";
+  link.download = "CV_Noe_Godin.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
