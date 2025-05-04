@@ -22,7 +22,7 @@ const projects = {
       title: "Fast and robust E-commerce backend",
       date: "2024",
       description:
-        "Complete Backend handling items, cart, products and customer, having authentication, tests, workers and a backoffice",
+        "Complete Backend handling items, cart, products and customer, having authentication, tests, workers and a backoffice.",
       image: "/projects/Django.png",
       technologies: ["Python", "Django", "Docker", "SQLite"],
       icon: <FaPython size={24} />,
@@ -33,7 +33,7 @@ const projects = {
       title: "Hammer Showcase Site",
       date: "2023",
       description:
-        "Basic frameworkless ultra optimized HTML / CSS / JS website showcasing hammers",
+        "Basic frameworkless ultra optimized HTML / CSS / JS website showcasing hammers.",
       image: "/projects/Martengo.png",
       technologies: ["JavaScript", "Plain HTML", "Plain CSS"],
       icon: <SiJavascript size={24} />,
@@ -48,7 +48,7 @@ const projects = {
       title: "Job Application Platform",
       date: "2025",
       description:
-        "Fully functional and robust job application platform with user authentication / authorization, analytics and a back-office",
+        "Fully functional and robust job application platform with user authentication / authorization, analytics and a back-office.",
       image: "/projects/GrosBoulot.png",
       technologies: ["Node.js", "EJS", "Bootstrap", "MySQL"],
       icon: <FaNodeJs size={24} />,
@@ -58,7 +58,7 @@ const projects = {
       title: "Parking lot Management System",
       date: "2024",
       description:
-        "Python app running on a terminal allowing users to book places & get reductions according to their fidelity",
+        "Python app running on a terminal allowing users to book places & get reductions according to their fidelity.",
       image: "/projects/Parking.png",
       technologies: ["Python", "PostgreSQL"],
       icon: <FaPython size={24} />,

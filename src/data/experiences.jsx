@@ -4,7 +4,7 @@ export const academicData = [
     organization: "University of Technology of Compiègne (UTC)",
     date: "2024 - 2027",
     description:
-      "Currently a first-year student in the Computer Engineering branch, doing an apprenticeship at AXA Group Operations",
+      "Currently a first-year student in the Computer Engineering branch, doing an apprenticeship at AXA Group Operations.",
     skills: [
       "Advanced Object-Oriented Development",
       "Statistics",
@@ -16,7 +16,7 @@ export const academicData = [
     organization: "University Institute of Technology of Paris",
     date: "2021 - 2024",
     description:
-      "Completed the 3rd year and obtained the BUT Diploma in Informatics with highest honors",
+      "Completed the 3rd year and obtained the BUT Diploma in Informatics with highest honors.",
     skills: [
       "Computer Architecture",
       "Machine Learning Algorithms",
@@ -38,7 +38,7 @@ export const professionalData = [
     organization: "AXA Group Operations",
     date: "2024 - 2027",
     description:
-      "Gained expertise in architectural fundamentals, especially in Cloud and created Archimate diagrams to model an application's Business, Application, and Technology layers",
+      "Gained expertise in architectural fundamentals, especially in Cloud and created Archimate diagrams to model an application's Business, Application, and Technology layers.",
     skills: ["Azure", "Archimate", "Spring Boot"],
   },
   {
@@ -54,7 +54,7 @@ export const professionalData = [
     organization: "Planète Immobilière",
     date: "2023, 2 months",
     description:
-      "Built an application to ensure correct interoperability by analyzing physical addresses and converting them into coordinates with a confidence interval (based on misspelling of the address)",
+      "Built an application to ensure correct interoperability by analyzing physical addresses and converting them into coordinates with a confidence interval (based on misspelling of the address).",
     skills: ["Java", "PostgreSQL"],
   },
 ];
