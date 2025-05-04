@@ -83,7 +83,7 @@ const projects = {
       date: "2025",
       description:
         "AXA Solution to implement a secure storage explorer for Azure Blob Storage, allowing users to manage files and folders securely.",
-      image: "/projects/1024x640.jpg",
+      image: "/projects/WSSE.png",
       technologies: ["Spring Boot", "Bootstrap", "Azure"],
       icon: <SiSpringboot size={24} />,
     },

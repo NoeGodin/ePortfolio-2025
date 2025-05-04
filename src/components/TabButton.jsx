@@ -1,12 +1,13 @@
 import { Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
-const TabButton = styled(Button)(({ theme, active }) => ({
+const StyledButton = styled(Button)(({ theme, active }) => ({
   borderRadius: 8,
   textTransform: "none",
   padding: "10px 20px",
   fontWeight: 500,
-  minWidth: 140,
+  minWidth: { xs: "auto", sm: 140 },
   transition: "all 0.2s ease",
   ...(active
     ? {
@@ -24,5 +25,19 @@ const TabButton = styled(Button)(({ theme, active }) => ({
         },
       }),
 }));
+
+const TabButton = ({ children, startIcon, active, ...props }) => {
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
+
+  return (
+    <StyledButton
+      active={active}
+      startIcon={isMobile ? null : startIcon}
+      {...props}
+    >
+      {isMobile ? startIcon : children}
+    </StyledButton>
+  );
+};
 
 export default TabButton;

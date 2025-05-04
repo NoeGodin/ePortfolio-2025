@@ -1,7 +1,6 @@
 import * as React from "react";
 import { ThemeProvider, CssBaseline, Box } from "@mui/material";
 import darkTheme from "./theme-config";
-import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Technologies from "./sections/Technologies";
 import Footer from "./sections/Footer.jsx";
@@ -22,7 +21,6 @@ function App() {
           paddingTop: "20px",
         }}
       >
-        <Navbar />
         <section id="home">
           <Hero />
         </section>

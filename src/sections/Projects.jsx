@@ -6,16 +6,21 @@ import {
   Container,
   Stack,
   Pagination,
+  useMediaQuery,
 } from "@mui/material";
 import Project from "../components/Project";
 import projects from "../data/projects";
 import TabsContainer from "../components/TabsContainer";
 import TabButton from "../components/TabButton";
+import PersonIcon from "@mui/icons-material/Person";
+import SchoolIcon from "@mui/icons-material/School";
+import WorkIcon from "@mui/icons-material/Work";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("personal");
   const [page, setPage] = useState(1);
   const projectsPerPage = 4;
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -59,23 +64,39 @@ const Projects = () => {
           A collection of my work across various domains
         </Typography>
 
-        <TabsContainer elevation={0}>
-          <Stack direction="row" spacing={2}>
+        <TabsContainer
+          elevation={0}
+          sx={{
+            margin: { xs: "0 auto", md: 0 },
+            width: { xs: "fit-content", md: "100%" },
+          }}
+        >
+          <Stack
+            direction="row"
+            spacing={isMobile ? 1 : 2}
+            sx={{
+              justifyContent: "center",
+              width: "100%",
+            }}
+          >
             <TabButton
               active={activeTab === "personal" ? 1 : 0}
               onClick={() => handleTabChange("personal")}
+              startIcon={<PersonIcon />}
             >
               Personal
             </TabButton>
             <TabButton
               active={activeTab === "academic" ? 1 : 0}
               onClick={() => handleTabChange("academic")}
+              startIcon={<SchoolIcon />}
             >
               Academic
             </TabButton>
             <TabButton
               active={activeTab === "professional" ? 1 : 0}
               onClick={() => handleTabChange("professional")}
+              startIcon={<WorkIcon />}
             >
               Professional
             </TabButton>
@@ -97,6 +118,7 @@ const Projects = () => {
             page={page}
             onChange={handlePageChange}
             color="primary"
+            size={isMobile ? "small" : "medium"}
             sx={{
               "& .MuiPaginationItem-root": {
                 color: "#aaaaaa",
