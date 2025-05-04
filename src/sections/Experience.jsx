@@ -37,58 +37,53 @@ const Experience = () => {
           Discover my academic and professional background
         </Typography>
       </Box>
-      <Grid container spacing={4}>
-        <Box
+
+      <Box
+        sx={{
+          mb: 4,
+          textAlign: { xs: "center", md: "left" },
+        }}
+      >
+        <TabsContainer
+          elevation={0}
           sx={{
-            textAlign: { xs: "center", md: "left" },
-            position: { md: "sticky" },
-            top: { md: 80 },
-            mb: { xs: 6, md: 0 },
+            margin: { xs: "0 auto", md: 0 },
+            width: { xs: "fit-content", md: "fit-content" },
           }}
         >
-          <TabsContainer
-            elevation={0}
-            sx={{
-              margin: { xs: "0 auto", md: 0 },
-              width: { xs: "fit-content", md: "100%" },
-            }}
+          <Stack
+            direction="row"
+            spacing={2}
+            sx={{ justifyContent: { xs: "center", md: "flex-start" } }}
           >
-            <Stack
-              direction="row"
-              spacing={2}
-              sx={{ justifyContent: { xs: "center", md: "flex-start" } }}
+            <TabButton
+              active={activeTab === "academic" ? 1 : 0}
+              onClick={() => handleTabChange("academic")}
+              startIcon={<SchoolIcon />}
             >
-              <TabButton
-                active={activeTab === "academic" ? 1 : 0}
-                onClick={() => handleTabChange("academic")}
-                startIcon={<SchoolIcon />}
-              >
-                Academic
-              </TabButton>
-              <TabButton
-                active={activeTab === "professional" ? 1 : 0}
-                onClick={() => handleTabChange("professional")}
-                startIcon={<WorkIcon />}
-              >
-                Professional
-              </TabButton>
-            </Stack>
-          </TabsContainer>
-        </Box>
+              Academic
+            </TabButton>
+            <TabButton
+              active={activeTab === "professional" ? 1 : 0}
+              onClick={() => handleTabChange("professional")}
+              startIcon={<WorkIcon />}
+            >
+              Professional
+            </TabButton>
+          </Stack>
+        </TabsContainer>
+      </Box>
 
-        <Grid item xs={12} md={8}>
-          <Box
-            sx={{
-              maxWidth: { xs: "800px", md: "100%" },
-              mx: { xs: "auto", md: 0 },
-            }}
-          >
-            <Timeline
-              items={activeTab === "academic" ? academicData : professionalData}
-            />
-          </Box>
-        </Grid>
-      </Grid>
+      <Box
+        sx={{
+          maxWidth: "800px",
+          mx: "auto",
+        }}
+      >
+        <Timeline
+          items={activeTab === "academic" ? academicData : professionalData}
+        />
+      </Box>
     </Container>
   );
 };
