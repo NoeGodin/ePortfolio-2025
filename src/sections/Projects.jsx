@@ -106,7 +106,7 @@ const Projects = () => {
 
       <Grid container spacing={4}>
         {currentProjects.map((project) => (
-          <Project project={project} />
+          <Project project={project} key={project.title} />
         ))}
       </Grid>
 

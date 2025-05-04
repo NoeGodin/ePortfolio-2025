@@ -32,7 +32,7 @@ const IconContainer = styled(Box)(({ theme, bgcolor }) => ({
 
 const Technology = ({ tech }) => {
   return (
-    <Grid item size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={tech.name}>
+    <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={tech.name}>
       <TechCard>
         <Grid container spacing={2} alignItems={"center"}>
           <IconContainer bgcolor={tech.color}>{tech.icon}</IconContainer>

@@ -29,7 +29,7 @@ const Technologies = () => {
 
       <Grid container spacing={3}>
         {technologies.map((tech) => (
-          <Technology tech={tech} />
+          <Technology tech={tech} key={tech.name} />
         ))}
       </Grid>
     </Container>

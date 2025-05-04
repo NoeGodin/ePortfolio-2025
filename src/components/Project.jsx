@@ -64,7 +64,7 @@ const Project = ({ project }) => {
   if (!project) return null;
 
   return (
-    <Grid item size={{ xs: 12, sm: 12, md: 6, lg: 6 }} key={project.name}>
+    <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }} key={project.name}>
       <ProjectCard elevation={0}>
         <ProjectImage
           sx={{
