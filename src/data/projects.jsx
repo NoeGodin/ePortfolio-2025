@@ -37,9 +37,8 @@ const projects = {
       image: "/projects/Martengo.png",
       technologies: ["JavaScript", "Plain HTML", "Plain CSS"],
       icon: <SiJavascript size={24} />,
-      link: "https://dev-fundamentals-e41e01.gitlab.io",
-      gitlab:
-        "https://gitlab.com/projets-perso6401507/javascript/dev-fundamentals",
+      link: "https://martengo-899e88.gitlab.io",
+      gitlab: "https://gitlab.com/projets-perso6401507/javascript/martengo",
     },
   ],
   academic: [
