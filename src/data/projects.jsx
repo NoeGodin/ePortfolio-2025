@@ -61,7 +61,7 @@ const projects = {
       image: "/projects/Parking.png",
       technologies: ["Python", "PostgreSQL"],
       icon: <FaPython size={24} />,
-      gitlab: "https://gitlab.com/projets-perso6401507/python/utc-parking",
+      gitlab: "https://gitlab.com/travail5433330/UTC/parking",
     },
     {
       id: 9,
