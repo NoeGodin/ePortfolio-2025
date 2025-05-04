@@ -104,15 +104,10 @@ const Project = ({ project }) => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            mb: 3,
             flexWrap: "wrap",
           }}
         >
-          <Stack
-            direction="row"
-            spacing={1}
-            sx={{ flexWrap: "wrap", gap: 1, mb: { xs: 2, md: 0 } }}
-          >
+          <Stack direction="row" spacing={1} sx={{ flexWrap: "wrap", gap: 1 }}>
             {project.technologies &&
               project.technologies.map((tech) => (
                 <Chip
@@ -128,48 +123,43 @@ const Project = ({ project }) => {
               ))}
           </Stack>
 
-          {project.link && (
-            <Button
-              variant="outlined"
-              size="small"
-              endIcon={<LaunchIcon fontSize="small" />}
-              onClick={() => window.open(project.link, "_blank")}
-              sx={{
-                borderColor: "rgba(91, 122, 252, 0.5)",
-                color: "#5b7afc",
-                borderRadius: 1,
-                textTransform: "none",
-                px: 2,
-                "&:hover": {
-                  borderColor: "#5b7afc",
-                  backgroundColor: "rgba(91, 122, 252, 0.1)",
-                },
-              }}
-            >
-              See More
-            </Button>
-          )}
-        </Box>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            {project.link && (
+              <Button
+                variant="outlined"
+                size="small"
+                endIcon={<LaunchIcon fontSize="small" />}
+                onClick={() => window.open(project.link, "_blank")}
+                sx={{
+                  borderColor: "rgba(91, 122, 252, 0.5)",
+                  color: "#5b7afc",
+                  borderRadius: 1,
+                  textTransform: "none",
+                  px: 2,
+                  "&:hover": {
+                    borderColor: "#5b7afc",
+                    backgroundColor: "rgba(91, 122, 252, 0.1)",
+                  },
+                }}
+              >
+                See More
+              </Button>
+            )}
 
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            mt: "auto",
-          }}
-        >
-          <Stack direction="row" spacing={1} sx={{ ml: "auto" }}>
             {project.gitlab && (
               <IconButton
                 size="small"
-                sx={{ color: "#aaaaaa", "&:hover": { color: "#ffffff" } }}
+                sx={{
+                  color: "#aaaaaa",
+                  "&:hover": { color: "#ffffff" },
+                  ml: 1,
+                }}
                 onClick={() => window.open(project.gitlab, "_blank")}
               >
                 <PiGitlabLogoLight />
               </IconButton>
             )}
-          </Stack>
+          </Box>
         </Box>
       </ProjectCard>
     </Grid>

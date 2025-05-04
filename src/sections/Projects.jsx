@@ -68,7 +68,7 @@ const Projects = () => {
           elevation={0}
           sx={{
             margin: { xs: "0 auto", md: 0 },
-            width: { xs: "fit-content", md: "100%" },
+            width: { xs: "fit-content" },
           }}
         >
           <Stack
