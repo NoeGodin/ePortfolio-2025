@@ -52,7 +52,7 @@ const handleContact = () => {
 };
 
 const handleDownloadCV = () => {
-  const cvPath = "public/CV-NoeGodin.pdf";
+  const cvPath = "CV-NoeGodin.pdf";
 
   const link = document.createElement("a");
   link.href = cvPath;
