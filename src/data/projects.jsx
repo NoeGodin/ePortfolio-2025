@@ -14,7 +14,7 @@ const projects = {
       image: "projects/Django.png",
       technologies: ["Python", "Django", "Docker", "SQLite"],
       icon: <FaPython size={24} />,
-      gitlab: "https://gitlab.com/projets-perso6401507/python/tuto-storefront",
+      github: "https://github.com/NoeGodin/E-Djommerce",
     },
     {
       id: 3,
@@ -25,8 +25,8 @@ const projects = {
       image: "projects/Martengo.png",
       technologies: ["JavaScript", "Plain HTML", "Plain CSS"],
       icon: <SiJavascript size={24} />,
-      link: "https://martengo-899e88.gitlab.io",
-      gitlab: "https://gitlab.com/projets-perso6401507/javascript/martengo",
+      link: "https://noegodin.github.io/Martengo/",
+      github: "https://github.com/NoeGodin/Martengo",
     },
   ],
   academic: [
@@ -39,6 +39,7 @@ const projects = {
       image: "projects/GrosBoulot.png",
       technologies: ["Node.js", "EJS", "Bootstrap", "MySQL"],
       icon: <FaNodeJs size={24} />,
+      github: "https://github.com/NoeGodin/UTC-GrosBoulot",
     },
     {
       id: 7,
@@ -49,7 +50,7 @@ const projects = {
       image: "projects/Parking.png",
       technologies: ["Python", "PostgreSQL"],
       icon: <FaPython size={24} />,
-      gitlab: "https://gitlab.com/travail5433330/UTC/parking",
+      github: "https://github.com/NoeGodin/UTC-Parking",
     },
     {
       id: 9,

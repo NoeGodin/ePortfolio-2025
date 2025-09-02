@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-import { PiGitlabLogoLight } from "react-icons/pi";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -68,10 +68,10 @@ const Footer = () => {
               "&:hover": { bgcolor: "rgba(255, 255, 255, 0.1)" },
             }}
             onClick={() =>
-              (window.location.href = "https://gitlab.com/NoeGodin")
+              (window.location.href = "https://github.com/NoeGodin")
             }
           >
-            <PiGitlabLogoLight size={24} />
+            <FaGithub size={24} />
           </IconButton>
           <IconButton
             size="small"

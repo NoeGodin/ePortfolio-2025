@@ -11,7 +11,7 @@ import {
 import { styled } from "@mui/material/styles";
 import LaunchIcon from "@mui/icons-material/Launch";
 import Button from "@mui/material/Button";
-import { PiGitlabLogoLight } from "react-icons/pi";
+import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = styled(Paper)(({ theme }) => ({
   backgroundColor: "rgba(32, 32, 32, 0.7)",
@@ -146,7 +146,7 @@ const Project = ({ project }) => {
               </Button>
             )}
 
-            {project.gitlab && (
+            {project.github && (
               <IconButton
                 size="small"
                 sx={{
@@ -154,9 +154,9 @@ const Project = ({ project }) => {
                   "&:hover": { color: "#ffffff" },
                   ml: 1,
                 }}
-                onClick={() => window.open(project.gitlab, "_blank")}
+                onClick={() => window.open(project.github, "_blank")}
               >
-                <PiGitlabLogoLight />
+                <FaGithub />
               </IconButton>
             )}
           </Box>
