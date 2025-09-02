@@ -11,7 +11,7 @@ const projects = {
       date: "2024",
       description:
         "Complete Backend handling items, cart, products and customer, having authentication, tests, workers and a backoffice.",
-      image: "/projects/Django.png",
+      image: "projects/Django.png",
       technologies: ["Python", "Django", "Docker", "SQLite"],
       icon: <FaPython size={24} />,
       gitlab: "https://gitlab.com/projets-perso6401507/python/tuto-storefront",
@@ -22,7 +22,7 @@ const projects = {
       date: "2023",
       description:
         "Basic frameworkless ultra optimized HTML / CSS / JS website showcasing hammers.",
-      image: "/projects/Martengo.png",
+      image: "projects/Martengo.png",
       technologies: ["JavaScript", "Plain HTML", "Plain CSS"],
       icon: <SiJavascript size={24} />,
       link: "https://martengo-899e88.gitlab.io",
@@ -36,7 +36,7 @@ const projects = {
       date: "2025",
       description:
         "Fully functional and robust job application platform with user authentication / authorization, analytics and a back-office.",
-      image: "/projects/GrosBoulot.png",
+      image: "projects/GrosBoulot.png",
       technologies: ["Node.js", "EJS", "Bootstrap", "MySQL"],
       icon: <FaNodeJs size={24} />,
     },
@@ -46,7 +46,7 @@ const projects = {
       date: "2024",
       description:
         "Python app running on a terminal allowing users to book places & get reductions according to their fidelity.",
-      image: "/projects/Parking.png",
+      image: "projects/Parking.png",
       technologies: ["Python", "PostgreSQL"],
       icon: <FaPython size={24} />,
       gitlab: "https://gitlab.com/travail5433330/UTC/parking",
@@ -57,7 +57,7 @@ const projects = {
       date: "2023",
       description:
         "Developed a mobile app to simplify household chore management in a fun and interactive way.",
-      image: "/projects/ChoreUp.png",
+      image: "projects/ChoreUp.png",
       technologies: ["Java", "Android Studio", "Firebase"],
       icon: <FaJava size={24} />,
       link: "https://drive.google.com/file/d/1h9KPkzm5XkkomIvWdVtTxu4dWmyBzqzu/view",
@@ -70,7 +70,7 @@ const projects = {
       date: "2025",
       description:
         "AXA Solution to implement a secure storage explorer for Azure Blob Storage, allowing users to manage files and folders securely.",
-      image: "/projects/WSSE.png",
+      image: "projects/WSSE.png",
       technologies: ["Spring Boot", "Bootstrap", "Azure"],
       icon: <SiSpringboot size={24} />,
     },
@@ -80,7 +80,7 @@ const projects = {
       date: "2024",
       description:
         "Website to manage and create advertising campaigns with integrated AI.",
-      image: "/projects/Alice.png",
+      image: "projects/Alice.png",
       technologies: ["TypeScript", "React", "MongoDB", "Jenkins"],
       icon: <SiTypescript size={24} />,
     },
@@ -90,7 +90,7 @@ const projects = {
       date: "2023",
       description:
         "Ensure correct interoperability by analyzing physical addresses and converting them into coordinates.",
-      image: "/projects/interoperabilite.png",
+      image: "projects/interoperabilite.png",
       technologies: ["Java"],
       icon: <DiJava size={24} />,
     },
@@ -100,7 +100,7 @@ const projects = {
       date: "2023",
       description:
         "Easy to manage and ship database interface for building permits.",
-      image: "/projects/PermisConstruire.jpg",
+      image: "projects/PermisConstruire.jpg",
       technologies: ["MySQL", "Java"],
       icon: <FaDatabase size={24} />,
     },

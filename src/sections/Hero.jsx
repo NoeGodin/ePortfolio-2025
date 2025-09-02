@@ -89,7 +89,7 @@ const Hero = () => {
           Full-Stack <BlueText>Developer & Software</BlueText> Engineer
         </Typography>
 
-        <StyledAvatar alt="Noé Godin" src="/profile-photo.jpg" />
+        <StyledAvatar alt="Noé Godin" src="profile-photo.jpg" />
 
         <Typography
           variant="body1"
